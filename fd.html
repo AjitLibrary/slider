@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    
+</head>
+<style>
+     
+    .swiper {
+        width: 40%;
+        height: 40%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 7px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 47%;
+        height: 47%;
+        object-fit: cover;
+      }
+      .journals_child {
+    display: flex;
+    align-content: flex-start;
+    flex-direction: column;
+}
+
+</style>
+<body>
+    <div class="swiper mySwiper">
+    <div class="journals swiper-wrapper" >
+        <div class="journals_child flex swiper-slide">
+              <img src="https://gandhimargjournal.org/wp-content/uploads/2021/12/Screenshot_20211214-083034_3.png" alt="">
+              <div class="journals_details">
+                  <p><strong>Title:</strong> Gandhi Prasang</p>
+                  <p><strong>Publisher:</strong> Gandhi Santi Pratishthan, New Delhi</p>
+              </div>
+
+        </div>
+        <div class="journals_child swiper-slide">
+            <img src="https://gandhimargjournal.org/wp-content/uploads/2021/12/Screenshot_20211214-083034_3.png" alt="">
+            <div class="journals_details">
+                <p><strong>Title:</strong>Gandhi Marg</p>
+                <p><strong>Publisher:</strong>Basant Behari Jairani</p>
+            </div>
+
+      </div>
+      <div class="journals_child swiper-slide">
+        <img src="https://gandhimargjournal.org/wp-content/uploads/2021/12/Screenshot_20211214-083034_3.png" alt="">
+        <div class="journals_details">
+            <p><strong>Title:</strong>Gandhi Marg</p>
+            <p><strong>Publisher:</strong>Basant Behari Jairani</p>
+        </div>
+
+  </div>
+  <div class="journals_child swiper-slide">
+    <img src="https://gandhimargjournal.org/wp-content/uploads/2021/12/Screenshot_20211214-083034_3.png" alt="">
+    <div class="journals_details">
+        <p><strong>Title:</strong>Gandhi Marg</p>
+        <p><strong>Publisher:</strong>Basant Behari Jairani</p>
+    </div>
+
+</div>
+<div class="journals_child swiper-slide">
+    <img src="https://gandhimargjournal.org/wp-content/uploads/2021/12/Screenshot_20211214-083034_3.png" alt="">
+    <div class="journals_details">
+        <p><strong>Title:</strong>Gandhi Marg</p>
+        <p><strong>Publisher:</strong>Basant Behari Jairani</p>
+    </div>
+
+</div>
+<div class="journals_child swiper-slide">
+    <img src="https://gandhimargjournal.org/wp-content/uploads/2021/12/Screenshot_20211214-083034_3.png" alt="">
+    <div class="journals_details">
+        <p><strong>Title:</strong>Gandhi Marg</p>
+        <p><strong>Publisher:</strong>Basant Behari Jairani</p>
+    </div>
+
+</div>
+<div class="journals_child swiper-slide">
+    <img src="https://gandhimargjournal.org/wp-content/uploads/2021/12/Screenshot_20211214-083034_3.png" alt="">
+    <div class="journals_details">
+        <p><strong>Title:</strong>Gandhi Marg</p>
+        <p><strong>Publisher:</strong>Basant Behari Jairani</p>
+    </div>
+
+</div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+</div>
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 10,
+    slidesPerGroup: 3,
+    infinite: true,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+</body>
+</html>
